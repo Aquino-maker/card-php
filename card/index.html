@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Card</title>
+    <link rel="stylesheet" href="/src/card.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/calendar.png" alt="">
+        <h3>Crie seu convite</h3>
+        <h4>Sobre o evento</h4>
+        <form action="card/index.php" method="post">
+            <div class="textfield">
+                <label for="title">Titulo</label>
+                <input type="text" name="title" id="title" placeholder="Nome do Evento">
+            </div>
+            <div class="textfield">
+                <label for="start">Início</label>
+                <input type="datetime-local" name="start" id="start">
+            </div>
+            <div class="textfield">
+                <label for="end">Fim</label>
+                <input type="datetime-local" name="end" id="end">
+            </div>
+            <div class="textfield">
+                <label for="type">Tipo</label>
+                <select name="type" id="type">
+                    <option value="presencial">Presencial</option>
+                    <option value="online">Online</option>
+                </select>
+            </div>
+            <div class="textfield">
+                <label for="place">Local</label>
+                <input type="text" name="place" id="place" placeholder="Link ou Endereço">
+            </div>
+            <div class="textfield">
+                <label for="description">Descrição</label>
+                <input type="text" name="description" id="description" placeholder="Escreva sobre os detalhes do evento">
+            </div>
+            <img src="img/paintbrush-vertical.png" alt="">
+            <h3>Personalização</h3>
+            <p>Cor principal</p>
+            <div class="color-picker">
+                <div class="color-option" style="background-color: #89CFF0;"></div>
+                <div class="color-option" style="background-color: #6A5ACD;"></div>
+                <div class="color-option" style="background-color: #9370DB;"></div>
+                <div class="color-option" style="background-color: #FF69B4;"></div>
+                <div class="color-option selected" style="background-color: #DC143C;"></div>
+                <div class="color-option" style="background-color: #FF6347;"></div>
+                <div class="color-option" style="background-color: #FFA500;"></div>
+                <div class="color-option" style="background-color: #FFD700;"></div>
+                <div class="color-option" style="background-color: #98FB98;"></div>
+                <div class="color-option" style="background-color: #00FA9A;"></div>
+            </div>
+            <p>Tema do Evento</p>
+            <div class="event-theme-selector">
+                <button type="button" class="event-theme-button " data-theme="aniversario">
+                    <img src="img/aniversario.png">
+                    <span>Aniversário</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="infantil">
+                    <img src="img/infantil.png">
+                    <span>Infantil</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="formatura">
+                    <img src="img/Formatura.png" alt="Formatura">
+                    <span>Formatura</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="casamento">
+                    <img src="img/Casamento.png">
+                    <span>Casamento</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="cha_de_bebe">
+                    <img src="img/cha_de_bebe.png">
+                    <span>Chá de bebê</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="cha_de_panela">
+                    <img src="img/cha_de_panela.png" alt="Chá de panela">
+                    <span>Chá de panela</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="carnaval">
+                    <img src="img/carnaval.png" alt="Carnaval">
+                    <span>Carnaval</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="pascoa">
+                    <img src="img/Páscoa.png" alt="Páscoa">
+                    <span>Páscoa</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="sao_joao">
+                    <img src="img/são joão.png" alt="São João">
+                    <span>São João</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="halloween">
+                    <img src="img/Halloween.png" alt="Halloween">
+                    <span>Halloween</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="natal">
+                    <img src="img/Natal.png" alt="Natal">
+                    <span>Natal</span>
+                </button>
+                <button type="button" class="event-theme-button" data-theme="outro">
+                    <img src="img/Outro.png" alt="Outro">
+                    <span>Outro</span>
+                </button>
+            </div>
+            
+            <div class="style-section">
+                <label for="dark-mode">Estilo</label>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="dark-mode">
+                    <label for="dark-mode" class="toggle-label"></label>
+                </div>
+                <span class="dark-mode-label">Escuro</span>
+            </div>
+            <div class="cover-section">
+                <label for="cover-image">Foto de capa</label>
+                <div class="file-upload">
+                    <input type="file" id="cover-image" accept="image/*">
+                    <label for="cover-image" class="upload-button">Selecionar</label>
+                    <span class="file-name">Nenhum arquivo selecionado</span>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <script src="/src/index.js"></script>
+</body>
+
+</html>

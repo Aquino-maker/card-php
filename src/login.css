@@ -19,7 +19,7 @@ body * {
 }
 
 .left-login {
-    width: 50vh;
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;

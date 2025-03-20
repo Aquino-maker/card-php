@@ -9,26 +9,27 @@
 </head>
 
 <body>
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Faça seu login <br>E aproveite</h1>
-            <img src="src/login.svg" class="left-login-img" alt="">
-        </div>
-
-        <div class="right-login">
-            <div class="card-login">
-                <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="user">Usuário</label>
-                    <input type="text" name="user" placeholder="Usuário">
-                </div>
-                <div class="textfield">
-                    <label for="pass">Senha</label>
-                    <input type="password" name="pass" placeholder="Senha">
-                </div>
-                <button class="btn-login">Login</button>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça seu login <br>E aproveite</h1>
+                <img src="src/img/login.svg"" class="left-login-img" alt="">
             </div>
-        </div>
+        <form action="card/index.php" method="post">
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <label for="user">Usuário</label>
+                        <input type="text" name="user" id="user" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="pass">Senha</label>
+                        <input type="password" name="pass" id="pass" placeholder="Senha">
+                    </div>
+                    <button class="btn-login">Login</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 
